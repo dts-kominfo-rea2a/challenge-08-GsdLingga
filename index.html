@@ -57,7 +57,7 @@
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
-        if (toDoItem.type === "click" || toDoItem.keyCode === 13) {
+        if (toDoItem.type === "click" || toDoItem.key === "Enter") {
           let li = document.createElement("li");
           li.innerHTML = input.value;
           output.append(li);
